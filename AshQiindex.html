@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashish Kumar | Full Stack Developer</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:'Inter',sans-serif;
+    }
+
+    body{
+      background:#020617;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    ::selection{
+      background:#38bdf8;
+      color:white;
+    }
+
+    .gradient-text{
+      background:linear-gradient(to right,#38bdf8,#8b5cf6,#ec4899);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .glass{
+      background:rgba(15,23,42,0.6);
+      backdrop-filter:blur(18px);
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .card{
+      transition:0.4s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.02);
+      box-shadow:0 0 40px rgba(56,189,248,0.15);
+    }
+
+    .hero-glow{
+      position:absolute;
+      width:700px;
+      height:700px;
+      background:radial-gradient(circle,rgba(56,189,248,0.15),transparent 70%);
+      filter:blur(100px);
+      top:-200px;
+      left:-200px;
+      z-index:-1;
+    }
+
+    .hero-glow2{
+      position:absolute;
+      width:500px;
+      height:500px;
+      background:radial-gradient(circle,rgba(139,92,246,0.15),transparent 70%);
+      filter:blur(100px);
+      bottom:-100px;
+      right:-100px;
+      z-index:-1;
+    }
+
+    .btn-primary{
+      background:linear-gradient(to right,#06b6d4,#8b5cf6);
+      transition:0.4s ease;
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 25px rgba(56,189,248,0.3);
+    }
+
+    .floating{
+      animation:float 4s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{transform:translateY(0px)}
+      50%{transform:translateY(-12px)}
+      100%{transform:translateY(0px)}
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 glass">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <h1 class="text-2xl md:text-3xl font-extrabold gradient-text">
+        Ashish Kumar
+      </h1>
+
+      <ul class="hidden md:flex gap-10 text-gray-300 font-medium">
+        <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+        <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center px-6 relative text-center">
+
+    <div class="max-w-5xl">
+
+      <img
+        src="https://i.postimg.cc/GmL2wcXF/IMG-20251202-172818.png"
+        alt="Profile"
+        class="w-44 h-44 rounded-full mx-auto border-4 border-cyan-400 object-cover shadow-2xl shadow-cyan-500/20 mb-10 floating"
+      />
+
+      <p class="uppercase tracking-[8px] text-cyan-400 text-sm md:text-base mb-5">
+        Full Stack Developer • AI Enthusiast
+      </p>
+
+      <h2 class="text-5xl md:text-8xl font-extrabold leading-tight">
+        Creating
+        <span class="gradient-text">Modern Digital</span>
+        Applications!
+      </h2>
+
+      
+      <p class="mt-10 text-gray-300 text-lg md:text-2xl leading-9 max-w-3xl mx-auto">
+        Hi, I'm Ashish Kumar — a B.Tech (CSE) student passionate about Full Stack Development, Artificial Intelligence, and building futuristic web applications with modern UI/UX.
+      </p>
+
+      <div class="mt-12 flex justify-center gap-5 flex-wrap">
+
+        <a href="https://drive.google.com/file/d/173ptKa4Xgc4GXpoM5YXxnKpzVxw2OCxf/view?usp=drivesdk" target="_blank">
+          <button class="btn-primary px-9 py-4 rounded-2xl font-semibold text-white">
+            Download Resume
+          </button>
+        </a>
+
+        <a href="#projects">
+          <button class="border border-cyan-400 hover:bg-cyan-400/10 transition px-9 py-4 rounded-2xl font-semibold">
+            Explore Projects
+          </button>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-28">
+
+    <div class="glass rounded-[32px] p-10 md:p-16 card">
+
+      <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-10">
+        About Me
+      </h2>
+
+      <p class="text-gray-300 text-lg md:text-xl leading-10">
+        I am currently pursuing B.Tech in Computer Science Engineering and continuously improving my skills in Web Development, DSA, AI, and Backend Technologies.
+
+        I enjoy building responsive websites, solving real-world problems, and exploring cutting-edge technologies to create impactful digital products.
+
+        My goal is to become a highly skilled software engineer and contribute to innovative tech solutions.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-7xl mx-auto px-6 py-20">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold gradient-text">
+        Skills & Technologies
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-7">
+
+      <div class="glass p-8 rounded-3xl text-center card">
+        <h3 class="font-semibold text-lg">HTML5</h3>
+      </div>
+
+      <div class="glass p-8 rounded-3xl text-center card">
+        <h3 class="font-semibold text-lg">CSS3</h3>
+      </div>
+
+      <div class="glass p-8 rounded-3xl text-center card">
+        <h3 class="font-semibold text-lg">JavaScript</h3>
+      </div>
+
+      <div class="glass p-8 rounded-3xl text-center card">
+        <h3 class="font-semibold text-lg">React.js</h3>
+      </div>
+
+      <div class="glass p-8 rounded-3xl text-center card">
+        <h3 class="font-semibold text-lg">Node.js</h3>
+      </div>
+
+      <div class="glass p-8 rounded-3xl text-center card">
+        <h3 class="font-semibold text-lg">Python</h3>
+      </div>
+
+      <div class="glass p-8 rounded-3xl text-center card">
+        <h3 class="font-semibold text-lg">GitHub</h3>
+      </div>
+
+      <div class="glass p-8 rounded-3xl text-center card">
+        <h3 class="font-semibold text-lg">Tailwind CSS</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-7xl mx-auto px-6 py-28">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold gradient-text">
+        Featured Projects
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Project -->
+      <div class="glass rounded-[32px] p-10 card relative overflow-hidden">
+
+        <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 blur-3xl"></div>
+
+        <h3 class="text-3xl font-bold mb-5">
+          AI Notes Summarizer
+        </h3>
+
+        <p class="text-gray-300 leading-9 text-lg">
+          An AI-powered application that transforms lengthy study notes into concise summaries for students using modern AI workflows.
+        </p>
+
+        <button class="mt-8 btn-primary px-6 py-3 rounded-xl font-semibold">
+          Coming Soon
+        </button>
+
+      </div>
+
+      <!-- Project -->
+      <div class="glass rounded-[32px] p-10 card relative overflow-hidden">
+
+        <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 blur-3xl"></div>
+
+        <h3 class="text-3xl font-bold mb-5">
+          Weather Dashboard
+        </h3>
+
+        <p class="text-gray-300 leading-9 text-lg">
+          A responsive weather application using real-time APIs to display live forecasts, city weather, and modern UI interactions.
+        </p>
+
+        <button class="mt-8 btn-primary px-6 py-3 rounded-xl font-semibold">
+          Coming Soon
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-28">
+
+    <div class="glass rounded-[32px] p-10 md:p-16 text-center card">
+
+      <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-12">
+        Let's Connect
+      </h2>
+
+      <div class="space-y-6 text-lg md:text-xl text-gray-300">
+
+        <p>
+          💌 kr.ashish535.hd@gmail.com
+        </p>
+
+        <p>
+          📞 +91 9905574287
+        </p>
+
+        <p>
+          🔗
+          <a
+            href="https://www.linkedin.com/in/ashish-kumar-ashq-ln03"
+            target="_blank"
+            class="text-cyan-400 hover:underline"
+          >
+            LinkedIn Profile
+          </a>
+        </p>
+
+        <p>
+          🔗
+          <a
+            href="https://github.com/AshQ-ghbi"
+            target="_blank"
+            class="text-cyan-400 hover:underline"
+          >
+            GitHub Profile
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-10 border-t border-slate-800 text-gray-500">
+    © 2026 Ashish Kumar • Owner Rights
+  </footer>
+
+</body>
+</html>
