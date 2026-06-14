@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 ## 📸 Portfolio Preview
 
-![Portfolio Preview](assets/portfolio-preview.png)
+![Portfolio Preview](portfolio_section_1.png)
 
 ## 🚀 Live Demo
 
