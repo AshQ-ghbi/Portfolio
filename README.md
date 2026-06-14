@@ -1,10 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-A modern, responsive personal portfolio website showcasing my skills, projects, achievements, and professional journey as an aspiring Software Engineer and AI enthusiast.
-
-## 📸 Portfolio Preview
-
-![Portfolio Preview](portfolio_section_1.png)
+A modern, responsive personal portfolio website showcasing my skills, projects, achievements, and professional journey as an Full Stack Developer and AI enthusiast.
 
 ## 🚀 Live Demo
 
