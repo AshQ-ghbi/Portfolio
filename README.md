@@ -2,6 +2,10 @@
 
 A modern, responsive personal portfolio website showcasing my skills, projects, achievements, and professional journey as an aspiring Software Engineer and AI enthusiast.
 
+## 📸 Portfolio Preview
+
+![Portfolio Preview](assets/portfolio-preview.png)
+
 ## 🚀 Live Demo
 
 **Website:** https://portfolio-seven-olive-21.vercel.app/
